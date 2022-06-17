@@ -16,16 +16,15 @@ import Fruitcombos from "./Pages/Fruitcombos";
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="allfruits" element={<Allfruits />} />
         <Route path="freshcuts" element={<Freshcuts />} />
-        <Route path="fruitscombos" element={<Fruitcombos/>} />
-        <Route path="giftsbykimaye" element={ <Giftsbykimaye/>} />
-        
+        <Route path="fruitcombos" element={<Fruitcombos />} />
+        <Route path="giftsbykimaye" element={<Giftsbykimaye />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

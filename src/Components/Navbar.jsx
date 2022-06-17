@@ -121,7 +121,7 @@ const Navbar = () => {
             src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1596288204"
             alt="logo"
             width={"135px"}
-            height={"35px"}
+            height={"35px"} onClick={()=>navigate("../")}
           />
         </div>
         <div style={{ display: "flex", gap: "20px" }}>

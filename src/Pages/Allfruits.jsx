@@ -1,28 +1,18 @@
-import React from 'react';
-import { useEffect,useState } from "react";
-import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
-
-
-
+import React from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Allfruits = () => {
-    const [allfruitsdata, setallfruitsdata] = useState([]);
-    const navigate = useNavigate();
+  const [allfruitsdata, setallfruitsdata] = useState([]);
+  const navigate = useNavigate();
 
-    
-
-     useEffect(() => {
-        
-        axios
-            .get("http://localhost:8080/allfruits")
-            .then((res) => (res.data))
-            .then((data) => setallfruitsdata(data))
-
-
-    }, [allfruitsdata]);
-       
-    
+  useEffect(() => {
+    axios
+      .get("http://localhost:8080/allfruits")
+      .then((res) => res.data)
+      .then((data) => setallfruitsdata(data));
+  }, []);
 
   return (
     <div style={{ marginTop: "100px" }}>
@@ -40,25 +30,17 @@ const Allfruits = () => {
         >
           <p
             style={{ textDecoration: "underline" }}
-            onClick={() => navigate("all-fruits")}
+            onClick={() => navigate("../allfruits")}
           >
             ALL FRUITS
           </p>
-          <p onClick={() => navigate("freshcuts")}> FRESH CUTS</p>
-          <p onClick={() => navigate("fruitcombos")}>
-            {" "}
-            FRUIT COMBOS
-          </p>
-          <p onClick={() => navigate("giftsbykimaye")}>
-            GIFTS BY KIMAYE
-          </p>
+          <p onClick={() => navigate("../freshcuts")}> FRESH CUTS</p>
+          <p onClick={() => navigate("../fruitcombos")}> FRUIT COMBOS</p>
+          <p onClick={() => navigate("../giftsbykimaye")}>GIFTS BY KIMAYE</p>
         </div>
         <div className="MapBox">
           {allfruitsdata.map((el, idx) => (
-            <div
-            
-              
-            >
+            <div>
               <img
                 className="Img"
                 style={{ width: "100%", borderRadius: "30px", height: "80%" }}
@@ -69,7 +51,7 @@ const Allfruits = () => {
                 style={{
                   textAlign: "center",
                   fontSize: "20px",
-                 
+
                   marginTop: "15px",
                 }}
               >
@@ -118,6 +100,6 @@ const Allfruits = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Allfruits;

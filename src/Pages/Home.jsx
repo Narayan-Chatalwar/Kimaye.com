@@ -1,7 +1,11 @@
 import React from "react";
 import styles from "./Home.module.css";
+import { useNavigate } from "react-router-dom";
+
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
       <div className="mainhomepage">
@@ -55,7 +59,11 @@ const Home = () => {
                     KIMAYE FRESH DATES
                   </h2>
                   <br />
-                  <button type="button" class="btn btn-success">
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    onClick={() => navigate("allfruits")}
+                  >
                     Shop Now
                   </button>
                   <br />
@@ -110,7 +118,11 @@ const Home = () => {
                     FRUIT OF BENEFITS
                   </h2>
                   <br />
-                  <button type="button" class="btn btn-warning">
+                  <button
+                    type="button"
+                    class="btn btn-warning"
+                    onClick={() => navigate("freshcuts")}
+                  >
                     Shop Now
                   </button>
                   <br />
@@ -168,7 +180,11 @@ const Home = () => {
                     KIMAYE CHERRIES
                   </h2>
                   <br />
-                  <button type="button" class="btn btn-success">
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    onClick={() => navigate("fruitcombos")}
+                  >
                     Shop Now
                   </button>
                   <br />
@@ -255,6 +271,7 @@ const Home = () => {
                   borderRadius: "10px",
                   padding: "5px 10px",
                 }}
+                onClick={() => navigate("allfruits")}
               >
                 Shop Now
               </button>
@@ -278,6 +295,7 @@ const Home = () => {
                   borderRadius: "10px",
                   padding: "5px 10px",
                 }}
+                onClick={() => navigate("freshcuts")}
               >
                 Shop Now
               </button>
@@ -310,6 +328,7 @@ const Home = () => {
                   borderRadius: "10px",
                   padding: "5px 10px",
                 }}
+                onClick={() => navigate("fruitcombos")}
               >
                 Shop Now
               </button>
@@ -333,6 +352,7 @@ const Home = () => {
                   borderRadius: "10px",
                   padding: "5px 10px",
                 }}
+                onClick={() => navigate("giftsbykimaye")}
               >
                 Shop Now
               </button>

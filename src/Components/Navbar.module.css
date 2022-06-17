@@ -17,15 +17,17 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+ 
 }
 .leftmenu{
   display: flex;
   gap: 40px;
+  
 }
 
 .leftmenu>div>a{
   text-decoration: none;
-  color: black;
+  /* color: black; */
 
 }
 

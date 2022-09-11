@@ -38,9 +38,10 @@ const Home = () => {
                       width: "40%",
                       margin: "auto",
                       borderRadius: "10px",
-                      padding: "0px",
+                      padding: "10px",
                       fontFamily: "cursive",
                       color: "white",
+                      fontSize:"20px"
                     }}
                   >
                     SAVIOUR EARTHY fLAVORS
@@ -52,6 +53,7 @@ const Home = () => {
                       borderRadius: "10px",
                       width: "40%",
                       margin: "auto",
+                      padding:"8px",
                       fontFamily: "cursive",
                       color: "white",
                     }}
@@ -61,7 +63,7 @@ const Home = () => {
                   <br />
                   <button
                     type="button"
-                    class="btn btn-success"
+                    className="btn btn-success"
                     onClick={() => navigate("allfruits")}
                   >
                     Shop Now
@@ -98,7 +100,7 @@ const Home = () => {
                       fontFamily: "cursive",
                       width: "40%",
                       margin: "auto",
-                      padding: "0px",
+                      padding: "10px",
                       color: "white",
                     }}
                   >
@@ -112,6 +114,7 @@ const Home = () => {
                       width: "40%",
                       margin: "auto",
                       color: "white",
+                      padding: "8px",
                       fontFamily: "cursive",
                     }}
                   >
@@ -120,7 +123,7 @@ const Home = () => {
                   <br />
                   <button
                     type="button"
-                    class="btn btn-warning"
+                    className="btn btn-warning"
                     onClick={() => navigate("freshcuts")}
                   >
                     Shop Now
@@ -160,7 +163,7 @@ const Home = () => {
                       fontFamily: "cursive",
                       width: "40%",
                       margin: "auto",
-                      padding: "0px",
+                      padding: "10px",
                       color: "white",
                     }}
                   >
@@ -174,6 +177,7 @@ const Home = () => {
                       fontFamily: "cursive",
                       width: "40%",
                       margin: "auto",
+                      padding: "8px",
                       color: "white",
                     }}
                   >
@@ -182,7 +186,7 @@ const Home = () => {
                   <br />
                   <button
                     type="button"
-                    class="btn btn-success"
+                    className="btn btn-success"
                     onClick={() => navigate("fruitcombos")}
                   >
                     Shop Now

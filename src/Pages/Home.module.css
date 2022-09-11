@@ -1,19 +1,21 @@
 .recommend{
     font-family:cursive;
     font-weight: bold;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 92%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
 }
-
-
-
 
 
 .mainknowmore{
     background-color: #7d9c5b;
-    padding: 50px;
+    padding: 30px;
     display: flex;
-    
     justify-content: space-around;
     font-family: cursive;
     margin-bottom: 150px;

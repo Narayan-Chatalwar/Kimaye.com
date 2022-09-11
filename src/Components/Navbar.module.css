@@ -1,6 +1,5 @@
 .uppernotification {
   background-color: #437111;
-
   color: white;
   display: flex;
   justify-content: center;
@@ -11,14 +10,13 @@
   width: 100%;
   
 }
-.bottomnavbar{
-  height: 70px;
-  background-color: #EEEEEA;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
- 
+@media (max-width: 600px) {
+  .uppernotification {
+    display: none;
+    
+  }
 }
+
 .leftmenu{
   display: flex;
   gap: 40px;

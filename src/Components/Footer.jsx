@@ -70,11 +70,9 @@ const Footer = () => {
         Made with &hearts; by{" "}
         <a
           href="https://linkedin.com/in/narayan-chatalwar-09905121a"
-          target={"_blank"}
           style={{ color: "black", textDecoration: "none" }}
         >
-         &nbsp;
-          Narayan chatalwar
+          &nbsp; Narayan chatalwar
         </a>
       </p>
     </div>

@@ -10,18 +10,13 @@ import { useState } from "react";
 import HashLoader from "react-spinners/HashLoader";
 import { Box } from "@chakra-ui/react";
 
-const override= {
+const override = {
   display: "block",
   margin: "0 auto",
   borderColor: "437111",
 };
 
-
-
-
-
-const Giftsbykimaye = () => {
-
+const Grapefamilybykimaye = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [appdata, setAppdata] = useState([]);
@@ -36,7 +31,7 @@ const Giftsbykimaye = () => {
     //  dispatch(getData())
     setLoading(true);
     axios
-      .get("https://my-api-141.herokuapp.com/appdata?category=giftsbykimaye")
+      .get("https://my-api-141.herokuapp.com/appdata?category=grapefamilybykimaye")
       .then((r) => (setAppdata(r.data), setLoading(false)));
   }, [dispatch]);
 
@@ -79,16 +74,17 @@ const Giftsbykimaye = () => {
           alignItems="center"
           marginTop="25px"
         >
-          <p
-            onClick={() => navigate("../allfruits")}
-          >
-            ALL FRUITS
-          </p>
+          <p onClick={() => navigate("../allfruits")}>ALL FRUITS</p>
           <p onClick={() => navigate("../freshcuts")}> FRESH CUTS</p>
           <p onClick={() => navigate("../fruitcombos")}> FRUIT COMBOS</p>
-          <p onClick={() => navigate("../giftsbykimaye")}>GIFTS BY KIMAYE  <div style={{width:"30px",background:"green",height:"3px"}}></div></p>
-          <p onClick={() => navigate("../grapefamilybykimaye")}>GRAPES FAMILY BY KIMAYE</p>       
-           </Box>
+          <p onClick={() => navigate("../giftsbykimaye")}>GIFTS BY KIMAYE</p>
+          <p onClick={() => navigate("../grapefamilybykimaye")}>
+            GRAPES FAMILY BY KIMAYE{" "}
+            <div
+              style={{ width: "30px", background: "green", height: "3px" }}
+            ></div>
+          </p>
+        </Box>
         <div className="MapBox">
           {appdata.map((el, idx) => (
             <div key={el.id} onClick={(e) => navigate(`/${el.id}`)}>
@@ -126,4 +122,4 @@ const Giftsbykimaye = () => {
   );
 };
 
-export default Giftsbykimaye;
+export default Grapefamilybykimaye;

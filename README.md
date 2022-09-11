@@ -10,6 +10,16 @@
 ### javascript
 ### HTML
 ### CSS
+### Restfull API
+
+# Tools Used :
+
+### GitBash
+### heroku API
+### versel deployment
+### vs code
+### React icons
+### chakra icons
 
 # Functionalityes:
 ### Cart
@@ -19,5 +29,10 @@
 ### product list page
 ### Crausels
 ### Responsiveness for all devices
+
+## Deployment : 
+#### versel:- kimye-com.vercel.app
+
+
 
 

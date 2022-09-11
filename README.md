@@ -31,7 +31,7 @@
 ### Responsiveness for all devices
 
 ## Deployment : 
-#### versel:- kimye-com.vercel.app
+#### versel:- 
 
 <a href="https://kimaye-com.vercel.app">kimye-com.vercel.app<a/>
 

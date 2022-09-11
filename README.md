@@ -11,6 +11,13 @@
 ### HTML
 ### CSS
 
-
+# Functionalityes:
+### Cart
+### Checkout
+### login
+### product detail
+### product list page
+### Crausels
+### Responsiveness for all devices
 
 

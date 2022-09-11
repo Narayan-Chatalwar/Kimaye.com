@@ -33,7 +33,7 @@
 ## Deployment : 
 #### versel:- 
 
-<a href="https://kimaye-com.vercel.app">kimye-com.vercel.app<a/>
+<a href="https://kimye-com.vercel.app">kimye-com.vercel.app<a/>
 
 
 

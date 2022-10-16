@@ -35,7 +35,7 @@ const Login = () => {
     console.log(pass)
     
     axios
-      .get("https://my-api-141.herokuapp.com/user")
+      .get("https://kimaye105.herokuapp.com/user")
       .then((r) => {
 
         if(r.data.pass===pass && r.data.email===email)

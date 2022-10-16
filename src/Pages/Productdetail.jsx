@@ -59,7 +59,7 @@ const Productdetail = () => {
   const handleCart=()=>{
     
     axios
-    .post("https://my-api-141.herokuapp.com/cart",currentproduct)
+    .post("https://kimaye105.herokuapp.com/cart",currentproduct)
     .then((r)=>dispatch(getCartData()))
   }
 

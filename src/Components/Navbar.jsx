@@ -10,17 +10,15 @@ import { useDispatch, useSelector } from "react-redux";
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const location=useLocation();
-  const dispatch=useDispatch();
+  const location = useLocation();
+  const dispatch = useDispatch();
   // const [cartData, setCartData] = useState([]);
 
-  const cartData=useSelector((store)=>store.CartReducer.cart)
- 
+  const cartData = useSelector((store) => store.CartReducer.cart);
 
   useEffect(() => {
-   
-      dispatch(getCartData());
-  }, [dispatch,cartData.length]);
+    dispatch(getCartData());
+  }, [dispatch, cartData.length]);
 
   return (
     <Box
@@ -40,7 +38,6 @@ const Navbar = () => {
         display="flex"
         position={{ base: "sticky", md: "sticky", lg: "sticky" }}
         top={{ base: "0px", md: "0px", lg: "0px" }}
-       
       >
         <div
           style={{
@@ -55,7 +52,7 @@ const Navbar = () => {
             top: "0px",
           }}
         >
-          <Box  display="flex" gap= "35px" >
+          <Box display="flex" gap="35px">
             <Menu>
               <MenuButton>
                 SHOP
@@ -150,7 +147,12 @@ const Navbar = () => {
               <span className="material-symbols-outlined">search</span>
             </Box>
 
-            <span className="material-symbols-outlined" onClick={()=>navigate("/signup")}>person</span>
+            <span
+              className="material-symbols-outlined"
+              onClick={() => navigate("/signup")}
+            >
+              person
+            </span>
             <div style={{ position: "fix", display: "flex", width: "40px" }}>
               {" "}
               <span

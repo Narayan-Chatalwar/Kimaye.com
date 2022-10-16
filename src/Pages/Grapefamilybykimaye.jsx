@@ -31,7 +31,7 @@ const Grapefamilybykimaye = () => {
     //  dispatch(getData())
     setLoading(true);
     axios
-      .get("https://my-api-141.herokuapp.com/appdata?category=grapefamilybykimaye")
+      .get("https://kimaye105.herokuapp.com/appdata?category=grapefamilybykimaye")
       .then((r) => (setAppdata(r.data), setLoading(false)));
   }, [dispatch]);
 

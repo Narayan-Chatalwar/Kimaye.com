@@ -40,7 +40,7 @@ const Signup = () => {
         pass: pass,
       };
   
-      axios.post("https://my-api-141.herokuapp.com/user", params)
+      axios.post("https://kimaye105.herokuapp.com/user", params)
       .then((r)=>alert("login success"))
       .then((r)=>navigate("/"))
       .catch((e)=>null);

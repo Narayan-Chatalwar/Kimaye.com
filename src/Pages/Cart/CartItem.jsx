@@ -48,7 +48,7 @@ export const CartItem = (props) => {
   
   const handleDelete = (id) => {
     axios
-      .delete(`https://my-api-141.herokuapp.com/cart/${id}`)
+      .delete(`https://kimaye105.herokuapp.com/cart/${id}`)
       .then((res) => (
         dispatch(getCartData()),
         toast({

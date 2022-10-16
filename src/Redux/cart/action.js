@@ -6,7 +6,7 @@ import axios from "axios";
 export const getCartData = () => (dispatch) => {
     dispatch({ type: types.GET_CART_REQUEST });
     return axios
-      .get("https://my-api-141.herokuapp.com/cart")
+      .get("https://kimaye105.herokuapp.com/cart")
       .then((r) => dispatch({ type: types.GET_CART_SUCCESS, payload: r.data }))
       .catch((e) => dispatch({ type: types.GET_CART_FAILURE }));
   };
@@ -14,7 +14,7 @@ export const getCartData = () => (dispatch) => {
 
 export const removeCart=(id)=>(dispatch)=>{
 
-return axios.delete(`https://my-api-141.herokuapp.com/cart/${id}`)
+return axios.delete(`https://kimaye105.herokuapp.com/cart/${id}`)
 .then((r)=>dispatch({type:types.EMPTY_CART_SUCCESS,payload:r.data}))
 .then((r)=> console.log(r.data))
 .then((e)=>null);

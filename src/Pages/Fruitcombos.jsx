@@ -31,7 +31,7 @@ const Fruitcombos = () => {
     //  dispatch(getData())
     setLoading(true);
     axios
-      .get("https://my-api-141.herokuapp.com/appdata?category=fruitcombos")
+      .get("https://kimaye105.herokuapp.com/appdata?category=fruitcombos")
       .then((r) => (setAppdata(r.data), setLoading(false)));
   }, [dispatch]);
 

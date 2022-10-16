@@ -24,7 +24,7 @@ const Allfruits = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("https://my-api-141.herokuapp.com/appdata?category=allfruits")
+      .get("https://kimaye105.herokuapp.com/appdata?category=allfruits")
       .then((r) => (setAppdata(r.data), setLoading(false)));
   }, [dispatch]);
 

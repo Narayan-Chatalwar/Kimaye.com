@@ -36,7 +36,7 @@ const Giftsbykimaye = () => {
     //  dispatch(getData())
     setLoading(true);
     axios
-      .get("https://my-api-141.herokuapp.com/appdata?category=giftsbykimaye")
+      .get("https://kimaye105.herokuapp.com/appdata?category=giftsbykimaye")
       .then((r) => (setAppdata(r.data), setLoading(false)));
   }, [dispatch]);
 

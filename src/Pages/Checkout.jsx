@@ -33,7 +33,7 @@ const Checkout = () => {
 
   useEffect(() => {
     axios
-      .get("https://my-api-141.herokuapp.com/cart")
+      .get("https://kimaye105.herokuapp.com/cart")
       .then((r) => SetCartData(r.data))
       .catch((e) => console.log(e));
   }, []);

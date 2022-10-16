@@ -31,7 +31,7 @@ const Freshcuts = () => {
     //  dispatch(getData())
     setLoading(true);
     axios
-      .get("https://my-api-141.herokuapp.com/appdata?category=freshcuts")
+      .get("https://kimaye105.herokuapp.com/appdata?category=freshcuts")
       .then((r) => (setAppdata(r.data), setLoading(false)));
   }, [dispatch]);
 
